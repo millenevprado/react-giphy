@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SearchBar from './search_bar';
 import Gif from './gif';
 import GifList from './gif_list';
+import giphy from 'giphy-api';
 
 class App extends Component {
   // state
@@ -12,6 +13,20 @@ class App extends Component {
       gifs: [],
       selectedGifId: "xT9IgDEI1iZyb2wqo8"
     };
+
+    this.search("batman");
+  }
+
+  search = (query) => {
+    // TODO: API call
+    giphy('boBx3e70XSldVIHyDVMZwdoUkbDnWxz8').search({
+      q: query,
+      rating: 'g'
+    }, (error, result) => {
+      this.setState({
+        gifs: result.data
+      });
+    });
   }
 
   render() {
