@@ -1,6 +1,10 @@
-# react-boilerplate
+# React Giphy App
 
-Simple react starter with the following config:
+## A simple react app that uses the [giphy-api](https://www.npmjs.com/package/giphy-api) to fetch gifs:
+
+## You can see it live [here](https://millenevprado.github.io/react-giphy/)
+
+## Created with Le Wagon [boilerplate](https://github.com/lewagon/react-boilerplate) using the following config:
 
 - React, ReactDOM
 - Webpack 4
@@ -9,7 +13,7 @@ Simple react starter with the following config:
 - work with `.js` or `.jsx` files
 - main `application.scss` stylesheet is imported in `index.js` as a module to enjoy hot reloading
 
-## Scripts
+### Script
 
 To start the local Webpack Dev Server (usually on port `8080`):
 
@@ -17,14 +21,3 @@ To start the local Webpack Dev Server (usually on port `8080`):
 yarn start
 ```
 
-To lint all JavaScript files in the `src` folder:
-
-```bash
-yarn lint
-```
-
-To build and deploy your app to `gh-pages` branch on the GitHub repo:
-
-```bash
-yarn deploy
-```
