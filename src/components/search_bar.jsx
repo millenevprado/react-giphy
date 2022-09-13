@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class SearchBar extends Component {
   handleUpdate = (event) => {
-    console.log(event.currentTarget.value);
+    this.props.searchFunction(event.currentTarget.value);
   }
 
   render() {
